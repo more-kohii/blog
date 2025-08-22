@@ -30,9 +30,9 @@ jobs:
           post_dir: _posts
           post_layout: post
           post_layout_skip: false
-          commit_username: more-kohii
-          commit_email: oojm1210@naver.com
-          commit_author: more-kohii <oojm1210@naver.com>
+          commit_user_name: kohii
+          commit_user_email: oojm1210@korea.ac.kr
+          commit_author: "kohii <oojm1210@korea.ac.kr>"
           commit_message: Synchronized by Notion to Jekyll
 
       - name: Commit and push changes
