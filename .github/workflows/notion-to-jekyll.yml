@@ -33,5 +33,3 @@ jobs:
         with:
           commit_message: "chore(posts): sync from Notion"
           branch: ${{ github.ref_name }}
-
-
