@@ -1,18 +1,17 @@
 # Site settings
-title: Lorem Ipsum - Web Developer
-description: "A blog about lorem ipsum ..."
-baseurl: "" # GitHub Pages 사용자/프로젝트 루트에 맞게 비움
+title: kohii - Security Researcher
+description: "A blog about kohii ..."
+baseurl: "https://more-kohii.github.io" # GitHub Pages 사용자/프로젝트 루트에 맞게 비움
 url: "https://more-kohii.github.io" # 사용자 페이지 기준
 
 # User settings
-username: lorem ipsum
-user_title: Lorem Ipsum - FrontEnd
+username: kohii
+user_title: kohii - FrontEnd
 email: lorem.lorem@ipsum.com
-twitter_username: loremipsum
-github_username: loremipsum
+twitter_username: more_kohii
+github_username: more-kohii
 discord_invite: cj5rg # Example: Discord server invite gg extension like in 'https://discord.gg/cj5rg'
-linkedin_public_url: loremipsum # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
-disqus_username: more-
+linkedin_public_url: jmoh-kohii # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
 profile_picture: https://68.media.tumblr.com/93f384858e9273d5b980b418e2f2f4d5/tumblr_o5i2aybLJG1uapsfmo2_250.png
 
 # Build settings
@@ -46,24 +45,25 @@ links:
       url: /about
       key_trigger: 5
   section_2:
-    - title: email
-      url: mailto:lorem.lorem@ipsum.com
-      new_tab: false
-      key_trigger: e
-    - title: twitter
-      url: https://twitter.com/loremipsum
-      key_trigger: t
     - title: github
-      url: https://github.com/loremipsum
+      url: http://www.github.com/more-kohii
       new_tab: true
       key_trigger: g
-    - title: linkedin
-      url: https://www.linkedin.com/in/loremipsum
-      new_tab: true
-      key_trigger: l
+    - title: twitter
+      url: http://www.twitter.com/more_kohii
+      key_trigger: t
+    - title: search
+      url: ""
+      key_trigger: s #WARNING: search only works with "s"
 
 # projects in header index
-projects: []
+projects:
+  # - name: fluany
+  #   url: https://github.com/fluany/fluany
+  # - name: vim-frontend
+  #   url: https://github.com/victorvoid/vim-frontend
+  # - name: generator-capybara
+  #   url: https://github.com/victorvoid/generator-capybara
 
 # exclude my node related stuff
 exclude: ["package.json", "src", "node_modules"]
