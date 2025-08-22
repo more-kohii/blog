@@ -12,7 +12,7 @@ twitter_username: more_kohii
 github_username: more-kohii
 discord_invite: cj5rg # Example: Discord server invite gg extension like in 'https://discord.gg/cj5rg'
 linkedin_public_url: jmoh-kohii # Example: For public profile 'www.linkedin.com/in/john-smith', 'john-smith' is your linkedin_public_url
-profile_picture: https://media1.tenor.com/m/DStjUEuBzpoAAAAd/quagsire-blink.gif
+profile_picture: /assets/img/quagsire-blink.gif
 
 # Build settings
 markdown: kramdown
