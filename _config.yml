@@ -1,8 +1,8 @@
 # Site settings
 title: kohii - Security Researcher
 description: "A blog about kohii ..."
-baseurl: blog.kohii.me" # GitHub Pages 사용자/프로젝트 루트에 맞게 비움
-url: "https://more-kohii.github.io" # 사용자 페이지 기준
+baseurl: "blog.kohii.me" # GitHub Pages 사용자/프로젝트 루트에 맞게 비움
+url: "https://blog.kohii.me" # 사용자 페이지 기준
 
 # User settings
 username: kohii
