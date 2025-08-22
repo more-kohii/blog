@@ -16,8 +16,8 @@ iOS 커널은 application이 실행될 때 해당 실행 코드가 Apple이 발�
 
 Code Signature에는 아래의 두 가지 종류가 존재한다.
 
-	- Ad-Hoc (Self-Signed) : 기본 어플리케이션, TrustCache에 signature hash가 존재함
-	- CMS : 인증서를 통한 sign된 signature
+- Ad-Hoc (Self-Signed) : 기본 어플리케이션, TrustCache에 signature hash가 존재함
+- CMS : 인증서를 통한 sign된 signature
 
 iOS 커널에서는 이 signature를 검증하는 과정에서 아래의 도식화 그림과 같이 동작하게 된다.
 
