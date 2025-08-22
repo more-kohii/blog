@@ -15,17 +15,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Debug Notion token length
-        run: echo "${{ secrets.NOTION_API_KEY }}" | awk '{print length}'
-
-      - name: Verify Notion token works
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-        run: |
-          curl -sS -H "Authorization: Bearer $NOTION_API_KEY" \
-            -H "Notion-Version: 2022-06-28" \
-            https://api.notion.com/v1/users/me
-
       - name: Validate secrets
         shell: bash
         run: |
@@ -38,6 +27,13 @@ jobs:
         with:
           notion_api_key: ${{ secrets.NOTION_API_KEY }}
           notion_database_id: ${{ secrets.NOTION_DATABASE_ID }}
+          post_dir: _posts
+          post_layout: post
+          post_layout_skip: false
+          commit_username: ${{ github.actor }}
+          commit_email: ${{ github.actor }}@users.noreply.github.com
+          commit_author: ${{ github.actor }}
+          commit_message: Synchronized by Notion to Jekyll
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
