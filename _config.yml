@@ -1,8 +1,8 @@
 # Site settings
 title: Lorem Ipsum - Web Developer
 description: "A blog about lorem ipsum ..."
-baseurl: "/space-jekyll-template" # for test: remove string '/space-jekyll-template' to ''
-url: "http://victorvoid.github.io/space-jekyll-template/" # for test: remove string 'http://victorvoid.github.io' to '' but in production: 'https://yourusername.github.io'
+baseurl: "" # GitHub Pages 사용자/프로젝트 루트에 맞게 비움
+url: "https://more-kohii.github.io" # 사용자 페이지 기준
 
 # User settings
 username: lorem ipsum
@@ -64,7 +64,7 @@ projects:
   - name: vim-frontend
     url: https://github.com/victorvoid/vim-frontend
   - name: generator-capybara
-    url: https://github.com/victorvoid/generator-capybara 
+    url: https://github.com/victorvoid/generator-capybara
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']

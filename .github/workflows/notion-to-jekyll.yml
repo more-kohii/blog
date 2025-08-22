@@ -1,0 +1,37 @@
+name: Notion to Jekyll
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate secrets
+        shell: bash
+        run: |
+          if [ -z "${{ secrets.NOTION_API_KEY }}" ] || [ -z "${{ secrets.NOTION_DATABASE_ID }}" ]; then
+            echo "Missing NOTION_API_KEY or NOTION_DATABASE_ID in repository Secrets"; exit 1;
+          fi
+
+      - name: Sync posts from Notion
+        uses: whatasame/notion-to-jekyll@v0
+        with:
+          notion_api_key: ${{ secrets.NOTION_API_KEY }}
+          notion_database_id: ${{ secrets.NOTION_DATABASE_ID }}
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(posts): sync from Notion"
+          branch: ${{ github.ref_name }}
+
+
