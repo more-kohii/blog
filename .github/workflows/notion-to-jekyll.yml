@@ -27,13 +27,6 @@ jobs:
         with:
           notion_api_key: ${{ secrets.NOTION_API_KEY }}
           notion_database_id: ${{ secrets.NOTION_DATABASE_ID }}
-          post_dir: _posts
-          post_layout: post
-          post_layout_skip: false
-          commit_username: ${{ github.actor }}
-          commit_email: ${{ github.actor }}@users.noreply.github.com
-          commit_author: ${{ github.actor }}
-          commit_message: Synchronized by Notion to Jekyll
 
       - name: Commit and push changes
         uses: stefanzweifel/git-auto-commit-action@v5
