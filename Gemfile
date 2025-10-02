@@ -1,10 +1,10 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3"
-gem "webrick", "~> 1.8"
+# This will help ensure the proper Jekyll version is running.
+gem "jekyll", "~> 4.0.0"
 
 group :jekyll_plugins do
-  gem "jekyll-feed"
+  gem 'jekyll-paginate'
+  gem 'jekyll-sitemap'
 end
-
 
