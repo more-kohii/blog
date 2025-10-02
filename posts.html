@@ -1,16 +1,14 @@
 ---
-layout: compress
+layout: page
+title: "My Posts"
+permalink: /posts/
 ---
 
-<!DOCTYPE html>
-<html lang="pt-br">
-    {% include head.html %}
-    <body>
-        <div class="page_posts">
-        {% include svg-icons.html %}
-        {% include header-post.html %}
-        {% include tree-posts.html %}
-        </div>
-        {% include scripts.html %}
-    </body>
-</html>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }}</p>
+  </li>
+  {% endfor %}
+</ul>
