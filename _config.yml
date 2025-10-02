@@ -1,7 +1,7 @@
 # Site settings
 lang: ko-KR
-title: kohii - Security Researcher
-description: "A blog about kohii ..."
+title: kohii
+description: ""
 url: "https://blog.kohii.me"
 baseurl: ""
 
