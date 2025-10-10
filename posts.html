@@ -4,11 +4,12 @@ title: "My Posts"
 permalink: /posts/
 ---
 
-<ul>
+<div class="post-list">
   {% for post in site.posts %}
-  <li>
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    <p>{{ post.excerpt }}</p>
-  </li>
+  <article class="post-item">
+    <h2 class="post-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </h2>
+  </article>
   {% endfor %}
-</ul>
+</div>

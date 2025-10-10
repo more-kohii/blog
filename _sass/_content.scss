@@ -53,6 +53,24 @@
   }
 }
 
+.post-content {
+  code {
+    color: #e67e22; // Orange color
+    background: #fdf2e9; // Light orange background
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+  }
+
+  pre {
+    code {
+      color: inherit; // Reset color for code blocks
+      background: none;
+      padding: 0;
+    }
+  }
+}
+
 .read-more {
   font-weight: bold;
 }
@@ -131,8 +149,8 @@
     margin-right: 5px;
     padding: 3px 10px;
     text-decoration: none;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
     &:hover {
       border-color: _palette(accent);
       color: _palette(accent);
