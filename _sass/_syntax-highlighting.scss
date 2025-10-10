@@ -1,6 +1,13 @@
 .highlight {
   background: #272822;
   color: #f8f8f2;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 1.66667em;
 
   pre {
     background: #272822;
