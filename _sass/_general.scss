@@ -119,27 +119,28 @@ ins {
   text-decoration: none;
 }
 
-/*
-pre {
-  background: _palette(bg);
-  border: 1px solid _palette(border);
+/* 일반 pre 태그 스타일 (highlight 클래스가 없는 경우) */
+pre:not(.highlight) {
+  background: #F7F6F3; // Notion 스타일의 밝은 회색 배경
+  border: 1px solid rgba(55, 53, 47, 0.09); // Notion 스타일의 얇은 테두리
   border-radius: 3px;
-  font-family: Consolas, "Andale Mono", "Courier New", Courier, monospace;
-  font-size: 0.88889rem;
-  margin: 0 0 1.875em;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.85em;
+  margin: 0 0 1.66667em;
   overflow: auto;
-  padding: 10px;
+  padding: 1em 1.2em;
   white-space: pre;
+  line-height: 1.5;
+  color: #37352F; // Notion 스타일의 어두운 텍스트 색상
 }
-*/
 
 :not(pre) > code {
-  background: _palette(bg);
-  border: 1px solid _palette(border);
+  color: #E16259; // Notion 스타일의 빨간색 인라인 코드
+  background: rgba(225, 98, 89, 0.1); // Notion 스타일의 연한 빨간색 배경
   border-radius: 3px;
-  font-family: Consolas, "Andale Mono", "Courier New", Courier, monospace;
-  font-size: 0.88889rem;
-  padding: 1px 3px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9em;
+  padding: 2px 6px;
   white-space: pre;
 }
 

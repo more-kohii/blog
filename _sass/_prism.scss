@@ -5,16 +5,18 @@
 
 code[class*="language-"],
 pre[class*="language-"] {
-  color: _palette(secondary);
+  color: #37352F; /* Notion 스타일의 어두운 텍스트 색상 */
   background: none;
-  font-family: Consolas, "Andale Mono", "Courier New", Courier, monospace;
-  font-size: 0.88889rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.85em;
   text-align: left;
   white-space: pre;
   word-spacing: normal;
   word-break: normal;
   word-wrap: normal;
   line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -35,20 +37,27 @@ pre[class*="language-"] {
 
 /* Code blocks */
 pre[class*="language-"] {
-  padding: 1em;
-  margin: .5em 0;
+  background: #F7F6F3; /* Notion 스타일의 밝은 회색 배경 */
+  border: 1px solid rgba(55, 53, 47, 0.09); /* Notion 스타일의 얇은 테두리 */
+  border-radius: 3px;
+  padding: 1em 1.2em; /* Notion 스타일의 패딩 */
+  margin: 0 0 1.66667em;
   overflow: auto;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  color: #37352F; /* Notion 스타일의 어두운 텍스트 색상 */
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-  background: _palette(bg);
+  background: #F7F6F3; /* Notion 스타일의 밝은 회색 배경 */
 }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-  padding: .1em;
-  border-radius: .3em;
+  color: #E16259; /* Notion 스타일의 빨간색 인라인 코드 */
+  background: rgba(225, 98, 89, 0.1); /* Notion 스타일의 연한 빨간색 배경 */
+  padding: 2px 6px;
+  border-radius: 3px;
   white-space: normal;
 }
 
@@ -56,11 +65,11 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-  color: slategray;
+  color: #6B6B6B; /* Notion 스타일의 회색 주석 */
 }
 
 .token.punctuation {
-  color: #999;
+  color: #37352F; /* Notion 스타일의 기본 텍스트 */
 }
 
 .namespace {
@@ -74,7 +83,7 @@ pre[class*="language-"] {
 .token.constant,
 .token.symbol,
 .token.deleted {
-  color: #905;
+  color: #0B7FC7; /* Notion 스타일의 파란색 */
 }
 
 .token.selector,
@@ -83,7 +92,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-  color: #690;
+  color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
 }
 
 .token.operator,
@@ -91,25 +100,25 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-  color: #9a6e3a;
-  background: hsla(0, 0%, 100%, .5);
+  color: #37352F; /* Notion 스타일의 기본 텍스트 */
+  background: transparent;
 }
 
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: #07a;
+  color: #9B2393; /* Notion 스타일의 보라색 키워드 */
 }
 
 .token.function,
 .token.class-name {
-  color: #dd4a68;
+  color: #0B7FC7; /* Notion 스타일의 파란색 함수 */
 }
 
 .token.regex,
 .token.important,
 .token.variable {
-  color: #e90;
+  color: #0B7FC7; /* Notion 스타일의 파란색 */
 }
 
 .token.important,
