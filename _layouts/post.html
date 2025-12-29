@@ -17,9 +17,15 @@ layout: default
       </figure><!-- .post-thumbnail -->
       {% endif %}
     </header><!-- .post-header -->
-    <div class="post-content">
-      {{content}}
-    </div><!-- .post-content -->
+    <div class="post-content-wrapper">
+      <div class="post-content">
+        {{content}}
+      </div><!-- .post-content -->
+      <aside class="table-of-contents" id="toc">
+        <div class="toc-header">목차</div>
+        <nav class="toc-nav" id="toc-nav"></nav>
+      </aside><!-- .table-of-contents -->
+    </div><!-- .post-content-wrapper -->
     <div class="post-share">
       <span>Share:</span>
       <a target="_blank"

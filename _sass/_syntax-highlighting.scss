@@ -17,211 +17,221 @@
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    color: #37352F; /* 기본 텍스트 색상 명시 */
+  }
+
+  code {
+    background: transparent;
+    color: inherit; /* 부모의 색상 상속 */
+    padding: 0;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: inherit;
   }
 
   .c {
-    color: #6B6B6B; /* Notion 스타일의 회색 주석 */
+    color: #6B6B6B !important; /* Notion 스타일의 회색 주석 */
   } /* Comment */
   .err {
-    color: #E16259; /* Notion 스타일의 빨간색 에러 */
+    color: #E16259 !important; /* Notion 스타일의 빨간색 에러 */
     background-color: rgba(225, 98, 89, 0.1);
   } /* Error */
   .k {
-    color: #9B2393; /* Notion 스타일의 보라색 키워드 */
+    color: #9B2393 !important; /* Notion 스타일의 보라색 키워드 */
   } /* Keyword */
   .l {
-    color: #0B7FC7; /* Notion 스타일의 파란색 리터럴 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 리터럴 */
   } /* Literal */
   .n {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name */
   .o {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Operator */
   .p {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Punctuation */
   .ch {
-    color: #6B6B6B; /* Notion 스타일의 회색 주석 */
+    color: #6B6B6B !important; /* Notion 스타일의 회색 주석 */
   } /* Comment.Hashbang */
   .cm {
-    color: #6B6B6B; /* Notion 스타일의 회색 주석 */
+    color: #6B6B6B !important; /* Notion 스타일의 회색 주석 */
   } /* Comment.Multiline */
   .cp {
-    color: #6B6B6B; /* Notion 스타일의 회색 주석 */
+    color: #6B6B6B !important; /* Notion 스타일의 회색 주석 */
   } /* Comment.Preproc */
   .cpf {
-    color: #6B6B6B; /* Notion 스타일의 회색 주석 */
+    color: #6B6B6B !important; /* Notion 스타일의 회색 주석 */
   } /* Comment.PreprocFile */
   .c1 {
-    color: #6B6B6B; /* Notion 스타일의 회색 주석 */
+    color: #6B6B6B !important; /* Notion 스타일의 회색 주석 */
   } /* Comment.Single */
   .cs {
-    color: #6B6B6B; /* Notion 스타일의 회색 주석 */
+    color: #6B6B6B !important; /* Notion 스타일의 회색 주석 */
   } /* Comment.Special */
   .gd {
-    color: #E16259; /* Notion 스타일의 빨간색 삭제 */
+    color: #E16259 !important; /* Notion 스타일의 빨간색 삭제 */
   } /* Generic.Deleted */
   .ge {
     font-style: italic;
   } /* Generic.Emph */
   .gi {
-    color: #0F7B0F; /* Notion 스타일의 초록색 삽입 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 삽입 */
   } /* Generic.Inserted */
   .gs {
     font-weight: bold;
   } /* Generic.Strong */
   .gu {
-    color: #6B6B6B; /* Notion 스타일의 회색 */
+    color: #6B6B6B !important; /* Notion 스타일의 회색 */
   } /* Generic.Subheading */
   .kc {
-    color: #9B2393; /* Notion 스타일의 보라색 키워드 */
+    color: #9B2393 !important; /* Notion 스타일의 보라색 키워드 */
   } /* Keyword.Constant */
   .kd {
-    color: #9B2393; /* Notion 스타일의 보라색 키워드 */
+    color: #9B2393 !important; /* Notion 스타일의 보라색 키워드 */
   } /* Keyword.Declaration */
   .kn {
-    color: #9B2393; /* Notion 스타일의 보라색 키워드 */
+    color: #9B2393 !important; /* Notion 스타일의 보라색 키워드 */
   } /* Keyword.Namespace */
   .kp {
-    color: #9B2393; /* Notion 스타일의 보라색 키워드 */
+    color: #9B2393 !important; /* Notion 스타일의 보라색 키워드 */
   } /* Keyword.Pseudo */
   .kr {
-    color: #9B2393; /* Notion 스타일의 보라색 키워드 */
+    color: #9B2393 !important; /* Notion 스타일의 보라색 키워드 */
   } /* Keyword.Reserved */
   .kt {
-    color: #9B2393; /* Notion 스타일의 보라색 키워드 */
+    color: #9B2393 !important; /* Notion 스타일의 보라색 키워드 */
   } /* Keyword.Type */
   .ld {
-    color: #0B7FC7; /* Notion 스타일의 파란색 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 */
   } /* Literal.Date */
   .m {
-    color: #0B7FC7; /* Notion 스타일의 파란색 숫자 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 숫자 */
   } /* Literal.Number */
   .s {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String */
   .na {
-    color: #0B7FC7; /* Notion 스타일의 파란색 속성 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 속성 */
   } /* Name.Attribute */
   .nb {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Builtin */
   .nc {
-    color: #0B7FC7; /* Notion 스타일의 파란색 클래스 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 클래스 */
   } /* Name.Class */
   .no {
-    color: #0B7FC7; /* Notion 스타일의 파란색 상수 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 상수 */
   } /* Name.Constant */
   .nd {
-    color: #0B7FC7; /* Notion 스타일의 파란색 데코레이터 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 데코레이터 */
   } /* Name.Decorator */
   .ni {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Entity */
   .ne {
-    color: #0B7FC7; /* Notion 스타일의 파란색 예외 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 예외 */
   } /* Name.Exception */
   .nf {
-    color: #0B7FC7; /* Notion 스타일의 파란색 함수 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 함수 */
   } /* Name.Function */
   .nl {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Label */
   .nn {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Namespace */
   .nx {
-    color: #0B7FC7; /* Notion 스타일의 파란색 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 */
   } /* Name.Other */
   .py {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Property */
   .nt {
-    color: #9B2393; /* Notion 스타일의 보라색 태그 */
+    color: #9B2393 !important; /* Notion 스타일의 보라색 태그 */
   } /* Name.Tag */
   .nv {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Variable */
   .ow {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Operator.Word */
   .w {
-    color: transparent; /* 공백은 투명하게 */
+    color: transparent !important; /* 공백은 투명하게 */
   } /* Text.Whitespace */
   .mb {
-    color: #0B7FC7; /* Notion 스타일의 파란색 숫자 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 숫자 */
   } /* Literal.Number.Bin */
   .mf {
-    color: #0B7FC7; /* Notion 스타일의 파란색 숫자 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 숫자 */
   } /* Literal.Number.Float */
   .mh {
-    color: #0B7FC7; /* Notion 스타일의 파란색 숫자 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 숫자 */
   } /* Literal.Number.Hex */
   .mi {
-    color: #0B7FC7; /* Notion 스타일의 파란색 숫자 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 숫자 */
   } /* Literal.Number.Integer */
   .mo {
-    color: #0B7FC7; /* Notion 스타일의 파란색 숫자 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 숫자 */
   } /* Literal.Number.Oct */
   .sa {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Affix */
   .sb {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Backtick */
   .sc {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Char */
   .dl {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Delimiter */
   .sd {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Doc */
   .s2 {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Double */
   .se {
-    color: #0B7FC7; /* Notion 스타일의 파란색 이스케이프 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 이스케이프 */
   } /* Literal.String.Escape */
   .sh {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Heredoc */
   .si {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Interpol */
   .sx {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Other */
   .sr {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Regex */
   .s1 {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Single */
   .ss {
-    color: #0F7B0F; /* Notion 스타일의 초록색 문자열 */
+    color: #0F7B0F !important; /* Notion 스타일의 초록색 문자열 */
   } /* Literal.String.Symbol */
   .bp {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Builtin.Pseudo */
   .fm {
-    color: #0B7FC7; /* Notion 스타일의 파란색 함수 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 함수 */
   } /* Name.Function.Magic */
   .vc {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Variable.Class */
   .vg {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Variable.Global */
   .vi {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Variable.Instance */
   .vm {
-    color: #37352F; /* Notion 스타일의 기본 텍스트 */
+    color: #37352F !important; /* Notion 스타일의 기본 텍스트 */
   } /* Name.Variable.Magic */
   .il {
-    color: #0B7FC7; /* Notion 스타일의 파란색 숫자 */
+    color: #0B7FC7 !important; /* Notion 스타일의 파란색 숫자 */
   } /* Literal.Number.Integer.Long */
 }

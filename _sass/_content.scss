@@ -63,7 +63,18 @@
     font-size: 0.9em;
   }
 
-  pre {
+  // Rouge가 생성하는 .highlight는 별도 스타일 적용
+  .highlight {
+    code {
+      color: inherit; // 하이라이트 클래스 내부는 색상 상속
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+    }
+  }
+
+  // 일반 pre 태그 (highlight 클래스가 없는 경우)
+  pre:not(.highlight) {
     background: #F7F6F3; // Notion 스타일의 밝은 회색 배경
     border: 1px solid rgba(55, 53, 47, 0.09); // Notion 스타일의 얇은 테두리
     border-radius: 3px;

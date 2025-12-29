@@ -1,0 +1,151 @@
+/* ==========================================================================
+   References (Notion Bookmark Style)
+   ========================================================================== */
+
+.post-content {
+  // Reference 섹션 스타일
+  h2.reference-heading,
+  h3.reference-heading {
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+  }
+
+  // Reference 목록 컨테이너
+  .references,
+  .reference-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75em;
+    margin: 2em 0;
+  }
+
+  // Notion 스타일 북마크
+  .bookmark,
+  .reference-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #F7F6F3;
+    border: 1px solid rgba(55, 53, 47, 0.09);
+    border-radius: 3px;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    margin-bottom: 0.75em;
+
+    &:hover {
+      background: #F1F0ED;
+      border-color: rgba(55, 53, 47, 0.16);
+      transform: translateY(-1px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    .bookmark-content {
+      display: flex;
+      min-height: 120px;
+
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        min-height: auto;
+      }
+
+      .bookmark-info {
+        flex: 1;
+        padding: 1em 1.2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .bookmark-title {
+          font-size: 0.95em;
+          font-weight: 600;
+          color: #37352F;
+          margin: 0 0 0.5em;
+          line-height: 1.4;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .bookmark-description {
+          font-size: 0.85em;
+          color: #6B6B6B;
+          line-height: 1.5;
+          margin: 0;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+        }
+
+        .bookmark-url {
+          font-size: 0.8em;
+          color: #6B6B6B;
+          margin-top: 0.75em;
+          display: flex;
+          align-items: center;
+          gap: 0.5em;
+
+          &::before {
+            content: "🔗";
+            font-size: 0.9em;
+          }
+        }
+      }
+
+      .bookmark-image {
+        width: 180px;
+        min-width: 180px;
+        background: #F7F6F3;
+        background-size: 32px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (max-width: 600px) {
+          width: 100%;
+          min-width: 100%;
+          height: 120px;
+        }
+      }
+    }
+  }
+
+  // 일반 링크를 북마크로 변환하는 경우
+  ul.references,
+  ol.references {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.75em;
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        background: #F7F6F3;
+        border: 1px solid rgba(55, 53, 47, 0.09);
+        border-radius: 3px;
+        padding: 1em 1.2em;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background: #F1F0ED;
+          border-color: rgba(55, 53, 47, 0.16);
+          transform: translateY(-1px);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        &::before {
+          content: "🔗 ";
+          margin-right: 0.5em;
+        }
+      }
+    }
+  }
+}
+
