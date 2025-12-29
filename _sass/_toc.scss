@@ -9,7 +9,7 @@
 .table-of-contents {
   position: fixed;
   top: 100px;
-  right: max(30px, calc((100vw - 760px) / 2 - 250px)); // 컨텐츠 오른쪽에 배치
+  right: 30px; // 기본값
   width: 220px;
   max-height: calc(100vh - 120px);
   overflow-y: auto;
@@ -21,6 +21,11 @@
   z-index: 100;
   display: none; // 기본적으로 숨김, JavaScript로 표시
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  // 큰 화면에서 컨텐츠 오른쪽에 배치
+  @media only screen and (min-width: 1400px) {
+    right: calc((100vw - 760px) / 2 - 250px);
+  }
 
   @media only screen and (max-width: 1200px) {
     display: none !important; // 작은 화면에서는 숨김
